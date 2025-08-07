@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        html,body{
+        height:100%;padding:0px;margin:0px;overflow-x: hidden;
+    }
+    .hero-section{
+        height:100%;display: flex;flex-direction: column;
+    }
+    .my-color{
+      background-color: #010101;
+    }
+    .cust-all{
+      color:black !important;
+      background-color: #e6e6e6 !important;
+    
+        
+    }
+    .nav-below-cust{
+      height:30px !important;font-size: smaller;box-sizing: border-box;margin: 0px;
+      display:flex;align-items: center  !important;
+    }
+    .side-bar{
+      background-color: white;
+    }
+    .my-font-size{
+      font-size:medium !important;
+    }
+    .b a{
+      font-size:0.7rem;padding:8px !important;
+      color:white;text-decoration: none;
+    }
+    .card-title{
+      font-size:small;padding:0px;margin:0px;
+    }
+    .card-body{
+       border:none !important;
+    }
+    .card-body p, h5{
+      margin: 0;
+      padding: 0;
+     
+    
+    }
+    .cust-card-image{
+     width:100%;height:100%;object-fit: contain; 
+    }
+    .card-text{
+      font-size:medium;color:#de7921;font-weight: bold;padding:0px;margin:0px;
+    }
+   
+    .sold-num{
+      font-size:small;color:#24a5ff;
+    }
+    .prime{
+      color:#00A8E1; font-weight: bold; font-family: Arial, sans-serif;
+      padding:0px !important;margin:0px !important;
+    }
+    .tick{
+      color:#de7921;
+    }
+    .nav-link:hover{
+      color:white !important; 
+      border:1px solid white !important;
+      border-radius:5px;
+
+    }
+    .side-bar-cont h6,p,label{
+      font-size:0.8rem !important;   
+    }
+   .side-bar-cont p,label{
+    font-weight: 500;
+   }
+   .side-bar-cont h6{
+    font-weight: bold;
+   }
+   .form-check input{
+    border:1px solid black !important;
+    border-radius:4px !important;
+    
+   }
+   .discount p{
+    padding:0px !important;margin:0px !important;
+   }
+   
+    
+    
+
+    </style>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="hero-section">
+        <nav class="navbar navbar-expand-lg my-color navbar-dark d-grid col-12" >
+   <div class="container-fluid d-flex"> <!--turned his into flex container so width values work eg w-30 for child-->
+    <a class="navbar-brand w-40 pt-0 pb-0 ps-0 pe-0" href="#">
+      <img src="./amaz-img/amaz.jpg" alt="Bootstrap" width="113px" height="35px" style="object-fit:cover;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item col-lg-2 col-md-12 col-sm-12 d-flex flex-column" style="box-sizing:border-box;"> <!--gave col-3-->
+          <span style="color:white;font-size:0.6rem;">Delivery to Thrissur </span>
+          <div class="location-box"><span class="material-icons" style="color:white;font-size:0.7rem;">location_on</span>
+          <span style="color:white;font-size:0.6rem;">Update location</span></div></li> <!--closing of location box-->
+      
+          <!--search input box-->
+          <div class="container col-lg-12">
+            <div class="container d-flex ps-0 pe-0">
+              <div class="input-group">
+          <button class="btn dropdown-toggle d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown"
+          style="width:50px;color:black;background-color: #d4d4d4;">
+           All
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+          
+
+          <input class="form-control text-secondary" type="search" role="search" placeholder="Search Amazon.in" aria-label=".form-control-sm example">
+           <span class="material-icons rounded-0 rounded-end d-flex justify-content-center align-items-center" style="color:black;background-color: #f3a847;
+           width:50px;">search</span>
+      </div>
+       </div> </div> <!--closing of grup-->
+       
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle ps-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://flagcdn.com/w40/in.png" width="20" alt="India flag">EN
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">🇺🇸 English</a></li>
+            <li><a class="dropdown-item" href="#">🇮🇳 हिन्दी</a></li>
+            <li><a class="dropdown-item" href="#">🇪🇸 Español</a></li>     
+          </ul>
+        </li>
+        <li class="nav-item dropdown d-flex flex-column" style="justify-content:left;">
+          <div><span style="font-size: 0.6rem;color:white;">Hello, sign in</span></div>
+         <a class="nav-link dropdown-toggle" style="font-size: 0.6rem;font-weight: bold;color:white;padding:0px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Account & Lists 
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sign In</a></li>
+            <li><a class="dropdown-item" href="#">Create Account</a></li>
+            <li><a class="dropdown-item" href="#">Wish List</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Your Orders</a></li>
+          </ul>
+        </li>
+         <li class="nav-item d-flex flex-column">
+          <a class="nav-link" href="#" style="padding:0px;line-height: 1.2rem;">
+          <span style="font-size: 0.6rem;color:white;padding:0px;">Returns</span>
+          <span style="font-size: 0.6rem;color:white;padding:0px;font-weight: bold;">&Orders</span></a>
+        </li>
+         <li class="nav-item col-2 d-flex">
+          <a class="nav-link d-flex" href="#" style="align-items: center;padding:0px !important;">
+            <span class="material-icons">shopping_cart</span>
+            <span style="font-size: 0.6rem;color:white;padding:0px !important;font-weight: bold;box-sizing: border-box;">Cart</span></a>
+          </a>
+        </li>
+     
+    </div>
+  </div>
+</nav>
+<!--navbar2-->
+
+<ul class="nav" style="background-color: #222f3e;">
+   <button class="btn d-md-none me-2 " type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <i style="padding-right:3px;color:black;" class="fas fa-bars"></i><span style="color:white;"></span> <!--h-->
+     </button>
+      <div class="collapse navbar-collapse d-md-flex"  id="mainNavbar">
+     <!--heree-->
+  <li class="nav-item b">
+    <button class="btn" style="font-size: smaller;background-color: none !important;border:1px solid white;margin-left:10px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <i style="padding-right:3px;color:white;" class="fas fa-bars"></i><span style="color:white;">All</span></button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div> <!--closing of toggle-->
+  </li>
+   
+  
+  <li class="nav-item b">
+    <a class="nav-link active" aria-current="page" href="#" >Amazon miniTV </a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link" href="#">Sell</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link" href="#">Best Sellers</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Today's Deals</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Mobiles </a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Prime   </a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Electronics</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Customer Service </a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">New Releases</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Home & Kitchen</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Fashion</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Amazon Pay </a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Computers</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Gift</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Ideas</a>
+  </li>
+  <li class="nav-item b">
+    <a class="nav-link " aria-disabled="true">Books </a>
+  </li>
+  </div>
+  
+</ul>
+<!--opening of gray nav-->
+<nav class="navbar-lg shadow expand-lg bg-white d-flex ps-2" style="box-sizing: border-box !important;" >
+  <button class="btn d-md-none me-2 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+      <i style="padding-right:3px;color:black;" class="fas fa-bars"></i><span style="color:white;">All</span> <!--h-->
+     </button>
+
+  <p >1-48 of over 60,000 results for <span style="font-weight: bold; color:orange;">'water bottle'</span></p>
+  <div class="dropdown ms-auto" > 
+  <button class="btn btn-secondary dropdown-toggle  " style="width:110px !important;height:27px !important;padding:0px !important;
+  font-size: 11px;margin:0px !important;color:black;background-color: white;
+  border-radius: 15px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+   Sort by:Featured
+  </button>
+<ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Popularity</a></li>
+    <li><a class="dropdown-item" href="#">Price:Low to High</a></li>
+    <li><a class="dropdown-item" href="#">Price:High to Low</a></li>
+  </ul></div>
+</nav>
+
+
+<main class="container-fluid" style="margin-top: 0% !important;">
+  <div class="main-box col-12 col-md-12 min-vh-100"> <!--opening of main box-->
+    <div class="container-fluid px-4" style="box-sizing: border-box;">
+      <!--opening of  main row-->
+      <div class="row side-bar-cont">
+       
+        <!--opening of sidebar-->
+        <div class="col-lg-3 d-lg-block p-2 "> 
+           <div class="collapse d-lg-block" id="sidebarMenu">
+         <h6 class="mt-3">Deals & Discounts</h6>
+         <p class="text-start">Freedom Sale</p>
+         <h6>Delivery Day</h6>
+
+              <div class="form-check"> <!--1-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+                Get it by Tomorrow
+              </label>
+    </div> <!--closing of check-->
+
+      <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+                Get it it in 2 Days
+              </label>
+    </div> <!--closing of check-->
+
+    <h6 class="mt-3">Brands</h6>
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+               BOLDFIT
+              </label>
+    </div> <!--closing of check-->
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+               MILTON
+              </label>
+    </div> <!--closing of check-->
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+                ATTRO
+              </label>
+    </div> <!--closing of check-->
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+               REFULGIX
+              </label>
+    </div> <!--closing of check-->
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+               Lifelong
+              </label>
+    </div> <!--closing of check-->
+    <h6 class="mt-3">Customer Reviews</h6>
+    <p style="color:#de7921;font-weight:bold;font-size:large !important;">★★★★☆ <span style="padding:0px !important;margin:0px !important;color:black;font-weight: normal;font-size: small;">& Up</span></p>
+      
+    <h6 class="mt-3">Materials</h6>
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+               Plastic
+              </label>
+    </div> <!--closing of check-->
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+               Stainless Steel
+              </label>
+    </div> <!--closing of check-->
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+                Glass
+              </label>
+    </div> <!--closing of check-->
+    <div class="form-check "> <!--2-->
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+               Polypropylene
+              </label>
+    </div> <!--closing of check-->
+    
+    <div class=discount>
+    <h6 class="mt-3">Discount</h6>
+    <p>10% Off or More</p>
+    <p>25% Off or More</p>
+    <p>35% Off or More</p>
+    <p>50% Off or More</p>
+    <p>60% Off or More</p>
+    <p>70% Off or More</p></div> <!--closing of discount-->
+      </div> <!--closing of sidebar-->
+      </div> <!---hhh-->
+     
+<div class="col-md-12 col-12 col-lg-9">
+      <!--opening of row1-->
+     <div class="row" style="box-sizing: border-box !important;">
+    <div class="col-lg-3 col-3 col-md-3 ps-0 pt-1 pb-1" >
+      <img src="./amaz-img/images.png" style="width:100%;height:100px;object-fit: cover;">  
+    </div> <!--closing of column1-->
+
+    <!--first row 2nd column-->
+    <div class="col-lg-9 col-9 col-md-9" style="box-sizing: border-box !important;padding-left: 0px !important;">
+      <p class="text-start" style="margin-bottom: 0px;margin-top: 15px;">Motivational Water Bottles for Sports and Gym</p>
+     <p class="pt-1"><a class="link-opacity-100" style="font-size: small;" href="#">Shop BoldFitt &gt; </a></p>
+    </div> <!--closing of column2-->
+   </div> <!--closing of row1-->
+  
+
+   <!--opening of row2-->
+   <div class="row"> 
+   <div class="col-md-12 col-sm-12 col-lg-6" style="border:1px solid black;padding:0px;"> <!-- col1 of row2-->
+    <div class="h-100" style="width:100%;">
+    <img src="./amaz-img/fitbottle.jpeg" class="img-fluid" style="width:100%;height:100%;object-fit: cover;"></div>
+   </div>
+   
+   <!-- <opening of col2 of row2> -->
+   <div class="col-md-12 col-lg-6 col-sm-12" style="box-sizing: border-box;padding-left: 0px !important;"> <!--second solumn of row2-->
+    <div class="row h-100 g-2"> <!--opening row  inside 2nd column--> <!--not closed-->
+      <div class="col-md-4 col-lg-4 col-4"> 
+            <div class="card h-100" style="box-shadow: 
+      -20px 10px 90px white,-30px 10px 50px white;">
+         
+  <img src="./amaz-img/bot5.webp" class="card-img-top cust-card-image" alt="..." style="width:90%;height:100%;object-fit: contain !important;">
+  
+  <div class="card-body ps-1 pt-1 fs-6 fs-md-5 fs-lg-4 " style="border:1px solid black;padding:0px;box-sizing: border-box !important;">
+    <h5 class="card-title">Boldfit Steel Water Bottle – 750ml</h5>
+    <p class="card-text">★★★★☆<span class="sold-num">4,521</span>
+    <p class="pb-2"><span class="prime"><span class="tick">✔</span>prime</span>
+</p>
+  </div> <!--closing of card body-->
+</div> <!--closing of card-->
+</div> <!--closing of first subcolumn -->
+  
+   <div class="col-md-4 col-lg-4 col-4" >
+       <div class="card h-100" style="box-sizing: border-box !important;">
+  <img src="./amaz-img/bottle2.webp" class="card-img-top img-fluid" alt="..." style="width:100%;height:100%;">
+  <div class="card-body ps-1 pt-1 fs-6 fs-md-5 fs-lg-4" style="border:1px solid black;box-sizing: border-box !important;padding:0px;">
+    <h5 class="card-title">Boldfit Motivational Bottle for Gym</h5>
+    <p class="card-text">★★★★☆</span><span class="sold-num">3,521</span>
+    <p class="pb-2"><span class="prime" ><span class="tick">✔</span>prime</span>
+</p> <!--closing of prime-->
+  </div> <!--closing of card body-->
+</div> <!--closing of card-->
+    
+   </div><!--closing of 2nd sub column-->
+  
+   <div class="col-md-4 col-lg-4 col-4" style="box-sizing: border-box !important;">
+       <div class="card h-100" style="box-sizing: border-box !important;"> <!--removng card width makes card stretch column width-->
+        
+  <img src="./amaz-img/bottle.webp" class="card-img-top cust-card-img" alt="..." style="width:100%;height:100%;object-fit: contain !important;">
+
+  <div class="card-body ps-1 pt-1 fs-6 fs-md-5 fs-lg-4" style="border:1px solid black;box-sizing: border-box !important;padding:0px;">
+    <h5 class="card-title">Boldfit Motivational Bottle for Gym</h5>
+    <p class="card-text">★★★★☆</span><span class="sold-num">3,521</span>
+    <p class="pb-2" ><span class="prime" ><span class="tick">✔</span>prime</span>
+</p> <!--closing of prime-->
+  </div> <!--closing of card body-->
+   </div> <!--closing of card-->
+   </div> <!--closing of 3rd sub column-->
+   </div> <!--closing of subrow-->
+   </div><!--closing of 2nd column-->
+   </div><!--closing of row2-->
+  
+   <!------------------------------------------------------------->
+   <div class="row">
+    <div class="col-12">
+    <h4 class="mt-3 fw-normal">Showing products with Fast delivery</h4>
+    <p><a class="link-opacity-100 fs-6 fw-normal hover:" href="#" style="text-decoration:none;">See all products ,across price ranges.</a></p>
+    </div> <!--closing of col12-->
+   </div> <!--clsoing of row-->
+   <!----------------------------------------------------------------------------> 
+   <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+            <div class="card h-100" style="box-sizing: border-box !important;">
+        <img src="./amaz-img/sect2-1.webp" class="card-img-top img-fluid" alt="..." style="width:100%;height:100%;">
+        <div class="card-body pt-1 ps-1 fs-6 fs-md-5 fs-lg-4" style="box-sizing: border-box !important;padding:0px;">
+          <h5 class="card-title">Boldfit Motivational Bottle for Gym</h5>
+          <p class="card-text">★★★★☆</span><span class="sold-num">3,521</span>
+          <p class="pb-2" ><span class="prime" ><span class="tick">✔</span>prime</span>
+      </p> <!--closing of prime-->
+        </div> <!--closing of card body-->
+      </div> <!--closing of card-->
+    </div> <!--closing of 1st column-->
+    <!---------------------------------------------------------------------------->
+    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+              <div class="card h-100" style="box-sizing: border-box !important;">
+          <img src="./amaz-img/section2-2.webp" class="card-img-top img-fluid" alt="..." style="width:100%;height:100%;">
+        <div class="card-body pt-1 ps-1 fs-6 fs-md-5 fs-lg-4" style="border:1px solid black;box-sizing: border-box !important;padding:0px;">
+            <h5 class="card-title">Boldfit Motivational Bottle for Gym</h5>
+            <p class="card-text">★★★★☆</span><span class="sold-num">3,521</span>
+            <p class="pb-2" ><span class="prime" ><span class="tick">✔</span>prime</span>
+            </p> <!--closing of prime-->
+            </div> <!--closing of card body-->
+        </div> <!--closing of card-->
+       </div> <!--closing of 2nd column-->
+        <!---------------------------------------------------------------------------->
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+        <div class="card h-100" style="box-sizing: border-box !important;">
+          <img src="./amaz-img/section2-3.webp" class="card-img-top img-fluid" alt="..." style="width:100%;height:100%;">
+        <div class="card-body ps-1 pt-1 fs-6 fs-md-5 fs-lg-4" style="border:1px solid black;box-sizing: border-box !important;padding:0px;">
+            <h5 class="card-title">Boldfit Motivational Bottle for Gym</h5>
+            <p class="card-text">★★★★☆</span><span class="sold-num">3,521</span>
+            <p class="pb-2" ><span class="prime" ><span class="tick">✔</span>prime</span>
+            </p> <!--closing of prime-->
+            </div> <!--closing of card body-->
+        </div> <!--closing of card-->
+
+    </div> <!--closing of 3rd column-->
+
+   </div><!--clsoing of row-->
+
+
+
+
+
+
+
+
+
+   </div> <!--clsoing of the second main column-->
+    </div> <!--clsoing of row-->
+    </div> <!--closing of container fluid-->
+  </div><!--closing of main box-->
+ 
+</main>
+
+
+
+    </div><!--closing of hero-section-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
